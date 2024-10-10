@@ -23,6 +23,7 @@ function keepAlive()
         if(response.ok){
             let date = new Date();
             aliveSecond = date.getTime();
+	    return response.json();
         }
         throw new Error('Server offline');
     })

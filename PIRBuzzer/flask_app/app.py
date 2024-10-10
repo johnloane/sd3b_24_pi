@@ -76,4 +76,4 @@ def event(name, action):
 if __name__ == "__main__":
     sensorsThread = threading.Thread(target=motion_detection)
     sensorsThread.start()
-    app.run(host="172.20.10.3", port="50000")
+    app.run(host="192.168.1.8", port="50000")
